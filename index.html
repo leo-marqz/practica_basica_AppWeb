@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practica 1 - php</title>
+</head>
+<body>
+  <header>
+    <h1>Practica de procesamiento de datos con PHP</h1>
+  </header>
+
+  <main>
+    <form action="./main.php" method="POST">
+      <h2>METODO POST</h2>
+      <label for="nombre_p">Nombre</label>
+      <input type="text" id="nombre_p" name="nombre_p" autofocus>
+      <label for="apellido_p">Apellido</label>
+      <input type="text" id="apellido_p" name="apellido_p" >
+      <input type="submit" value="Enviar Datos" name="enviar_datos_post">
+    </form>
+  </main>
+
+  <main>
+    <form action="./main.php" method="GET">
+      <h2>METODO GET</h2>
+      <label for="nombre_g">Nombre</label>
+      <input type="text" id="nombre_g" name="nombre_g" autofocus>
+      <label for="nombre">Apellido</label>
+      <input type="text" id="apellido_g" name="apellido_g">
+      <input type="submit" value="Enviar Datos" name="enviar_datos_get">
+    </form>
+  </main>
+</body>
+</html>
